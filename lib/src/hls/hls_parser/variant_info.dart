@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class VariantInfo {
   VariantInfo({
@@ -41,6 +42,6 @@ class VariantInfo {
   }
 
   @override
-  int get hashCode => hashValues(
-      bitrate, videoGroupId, audioGroupId, subtitleGroupId, captionGroupId);
+ int get hashCode => Object.hashAll([a, b, c]);
+
 }
