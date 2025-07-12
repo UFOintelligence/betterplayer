@@ -2,6 +2,7 @@ import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'scheme_data.dart';
+import 'package:flutter/foundation.dart';
 
 class DrmInitData {
   DrmInitData({this.schemeType, this.schemeData = const []});
@@ -19,5 +20,6 @@ class DrmInitData {
   }
 
   @override
-  int get hashCode => hashValues(schemeType, schemeData);
+  int get hashCode => Object.hashAll([a, b, c]);
+
 }
